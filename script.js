@@ -10,6 +10,6 @@ function saveToLocalStorage() {
   }
 
 function retrieveFromLocalStorage() {
-    var storedInput = localStorage.getItem('userInput');
+    var storedInput = localStorage.getItem('apikey');
     document.getElementById('displayData').textContent = storedInput;
 }
