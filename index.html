@@ -5,11 +5,13 @@
     <link rel="icon" href="http://vrfist.com/images/favcon.ico">
 </head>
 <body>
+    <!--domain name selling-->
     <div class="container">
         <h1>Interested in this domain?</h1>
         <p>Please Contact <span id="email"></span></p>
     </div>
     <script src="script.js"></script>
+
 
     <!-- get api-key  -->
     <div class="container">
@@ -19,6 +21,13 @@
         
         <input type="text" id="myInput">
         <button onclick="saveToLocalStorage()">Submit</button>
+    </div>
+
+    <div class="container">
+        <h2>api value</h2>
+        <button onclick="retrieveFromLocalStorage()">Retrieve</button>
+
+        <p id="displayData"></p>
     </div>
 </body>
 </html>

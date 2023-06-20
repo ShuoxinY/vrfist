@@ -6,5 +6,10 @@ window.onload = function() {
 
 function saveToLocalStorage() {
     var myInput = document.getElementById('myInput').value;
-    localStorage.setItem('userInput', myInput);
+    localStorage.setItem('apikey', myInput);
   }
+
+function retrieveFromLocalStorage() {
+    var storedInput = localStorage.getItem('userInput');
+    document.getElementById('displayData').textContent = storedInput;
+}
